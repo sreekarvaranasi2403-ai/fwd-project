@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | YOUR HEALTH OUR PRIORITY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" aria-label="Main Navigation">
+    <div class="topbar-inner">
+      <div class="brand">YOUR HEALTH OUR PRIORITY</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="signup.html">Sign Up</a>
+        <a class="active" href="login.html">Login</a>
+        <a href="admin-login.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="panel auth-panel">
+      <h1>User Login</h1>
+      <p>Login to continue your medicine orders.</p>
+      <form id="loginForm" class="form-grid">
+        <label>
+          Email
+          <input id="loginEmail" class="input" type="email" required />
+        </label>
+        <label>
+          Password
+          <input id="loginPassword" class="input" type="password" required />
+        </label>
+        <button class="btn" type="submit">Login</button>
+      </form>
+      <div id="loginStatus" class="status" aria-live="polite"></div>
+      <p class="small">No account yet? <a href="signup.html">Sign up here</a>.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
