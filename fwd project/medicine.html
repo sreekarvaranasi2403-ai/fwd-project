@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medicine Information | YOUR HEALTH OUR PRIORITY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" aria-label="Main Navigation">
+    <div class="topbar-inner">
+      <div class="brand">YOUR HEALTH OUR PRIORITY</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="medicine.html">Medicine Info</a>
+        <a href="features.html">Senior Features</a>
+        <a href="tips.html">Health Tips</a>
+        <a href="contact.html">Contact</a>
+        <a href="delivery.html">Delivery & Payment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="panel">
+      <h1><span class="icon">??</span>Medicine Information</h1>
+      <p>Type a medicine name to see clear details in large, easy cards.</p>
+      <div class="search-wrap">
+        <input class="input" id="medicineInput" type="text" placeholder="Example: Paracetamol" aria-label="Search medicine by name" />
+        <button class="btn" id="searchBtn" type="button">Search</button>
+      </div>
+      <div id="medicineStatus" class="status" aria-live="polite"></div>
+      <div id="medicineCards" class="grid-4" aria-live="polite"></div>
+    </section>
+
+    <p class="footer-note">Need help? Please call our pharmacist support from the Contact page.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

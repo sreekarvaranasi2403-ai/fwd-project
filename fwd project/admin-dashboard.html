@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | YOUR HEALTH OUR PRIORITY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" aria-label="Admin Navigation">
+    <div class="topbar-inner">
+      <div class="brand">YOUR HEALTH OUR PRIORITY</div>
+      <nav>
+        <a href="index.html">Back to Site</a>
+        <a href="admin-login.html">Admin Login</a>
+        <a class="active" href="admin-dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="panel">
+      <div class="btn-row" style="justify-content: space-between; align-items:center;">
+        <h1 style="margin:0;">Medicine Orders</h1>
+        <button class="btn btn-light" id="adminLogout" type="button">Logout</button>
+      </div>
+      <p>Admin can see all medicine orders and manage statuses.</p>
+      <div id="adminStatus" class="status" aria-live="polite"></div>
+      <div id="adminOrders" class="grid-3"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
